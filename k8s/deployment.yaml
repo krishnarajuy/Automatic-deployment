@@ -17,10 +17,11 @@ spec:
     spec:
       containers:
       - name: backend
-        image: your-dockerhub-sai6302/ipl-backend:latest
+        
+        image: sai6302/ipl-backend:latest
         ports:
-        - containerPort: 8080 
-        env:
+        
+        - containerPort: 8080
         
 ---
 # --- Frontend Deployment ---
@@ -40,6 +41,8 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: your-dockerhub-sai6302/ipl-frontend:latest
+        
+        image: sai6302/ipl-frontend:latest
         ports:
+        
         - containerPort: 80
