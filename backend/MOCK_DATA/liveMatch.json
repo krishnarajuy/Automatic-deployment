@@ -1,0 +1,13 @@
+{
+    "id": "livematch1",
+    "matchNumber": "Match 14 - LIVE",
+    "status": "LIVE",
+    "venue": "Chinnaswamy Stadium, Bengaluru",
+    "dateTime": "2024-04-14T19:30:00Z",
+    "team1": { "name": "Royal Challengers Bengaluru", "shortName": "RCB", "logo": "/teams/rcb.png", "score": "150/2", "overs": "(15.3)" },
+    "team2": { "name": "Sunrisers Hyderabad", "shortName": "SRH", "logo": "/teams/srh.png", "score": "Yet to bat" },
+    "toss": "RCB won the toss and chose to bat",
+    "currentStriker": { "name": "V. Kohli", "runs": "75", "balls": "45" },
+    "currentNonStriker": { "name": "G. Maxwell", "runs": "20", "balls": "10" },
+    "currentBowler": { "name": "B. Kumar", "overs": "3.3", "runs": "25", "wickets": "1" }
+}

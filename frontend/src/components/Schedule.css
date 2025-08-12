@@ -1,0 +1,132 @@
+/* Schedule.css */
+
+/* Container & Layout */
+.schedule-container {
+  padding: 16px;
+  background-color: #f5f7fa;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.schedule-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+  color: #0d3b66; /* Deep blue */
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+/* Schedule list */
+.schedule-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Individual match card */
+.schedule-item {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(13, 59, 102, 0.15);
+  padding: 20px 24px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: default;
+}
+
+.schedule-item:hover {
+  box-shadow: 0 12px 25px rgba(13, 59, 102, 0.3);
+  transform: translateY(-5px);
+}
+
+/* Header with match title and date */
+.schedule-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.match-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1a2935;
+  margin: 0;
+  flex: 1 1 auto;
+}
+
+.match-date {
+  font-size: 0.875rem;
+  color: #6c757d;
+  white-space: nowrap;
+  flex-shrink: 0;
+  margin-left: 12px;
+}
+
+/* Match details - teams and venue */
+.match-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Teams info */
+.teams-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: nowrap;
+}
+
+/* Team logos */
+.team-logo {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: contain;
+  box-shadow: 0 0 6px rgba(0,0,0,0.1);
+}
+
+/* Team short names */
+.team-shortname {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #0d3b66;
+  user-select: none;
+}
+
+/* vs text */
+.vs-text {
+  font-weight: 700;
+  color: #f25f5c; /* Vibrant red-orange */
+  margin: 0 8px;
+  user-select: none;
+}
+
+/* Venue text */
+.match-venue {
+  font-size: 0.9rem;
+  color: #495057;
+  font-style: italic;
+  flex-shrink: 0;
+  margin-top: 8px;
+  user-select: none;
+}
+
+/* Message if schedule is empty */
+.no-schedule {
+  padding: 20px;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #888888;
+  background-color: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  max-width: 400px;
+  margin: 40px auto;
+}

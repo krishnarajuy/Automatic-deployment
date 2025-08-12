@@ -1,0 +1,20 @@
+[
+  {
+    "id": "match1",
+    "matchNumber": "Match 15",
+    "status": "UPCOMING",
+    "venue": "Wankhede Stadium, Mumbai",
+    "dateTime": "2024-04-15T19:30:00Z",
+    "team1": { "name": "Mumbai Indians", "shortName": "MI", "logo": "/teams/mi.png" },
+    "team2": { "name": "Chennai Super Kings", "shortName": "CSK", "logo": "/teams/csk.png" }
+  },
+  {
+    "id": "match2",
+    "matchNumber": "Match 16",
+    "status": "UPCOMING",
+    "venue": "Eden Gardens, Kolkata",
+    "dateTime": "2024-04-16T19:30:00Z",
+    "team1": { "name": "Kolkata Knight Riders", "shortName": "KKR", "logo": "/teams/kkr.png" },
+    "team2": { "name": "Delhi Capitals", "shortName": "DC", "logo": "/teams/dc.png" }
+  }
+]

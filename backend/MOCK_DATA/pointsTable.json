@@ -1,0 +1,4 @@
+[
+  { "position": 1, "team": { "name": "Rajasthan Royals", "shortName": "RR", "logo": "/teams/rr.png" }, "matchesPlayed": 5, "wins": 4, "losses": 1, "noResult": 0, "points": 8, "netRunRate": "+0.871" },
+  { "position": 2, "team": { "name": "Kolkata Knight Riders", "shortName": "KKR", "logo": "/teams/kkr.png" }, "matchesPlayed": 4, "wins": 3, "losses": 1, "noResult": 0, "points": 6, "netRunRate": "+1.528" }
+]

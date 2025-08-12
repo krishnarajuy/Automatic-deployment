@@ -1,0 +1,45 @@
+# k8s/deployment.yaml
+
+# --- Backend Deployment ---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backend-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      component: backend
+  template:
+    metadata:
+      labels:
+        component: backend
+    spec:
+      containers:
+      - name: backend
+        image: your-dockerhub-sai6302/ipl-backend:latest
+        ports:
+        - containerPort: 8080 
+        env:
+        
+---
+# --- Frontend Deployment ---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: frontend-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      component: frontend
+  template:
+    metadata:
+      labels:
+        component: frontend
+    spec:
+      containers:
+      - name: frontend
+        image: your-dockerhub-sai6302/ipl-frontend:latest
+        ports:
+        - containerPort: 80

@@ -1,0 +1,241 @@
+/* LiveUpcoming.css */
+
+/* Root container */
+.p-2 {
+  padding: 0.5rem;
+}
+.sm\:p-4 {
+  padding: 1rem;
+}
+
+/* Fonts and base colors */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f5f7fa;
+  color: #333;
+}
+
+/* Heading style */
+.text-ipl-blue {
+  color: #1D4ED8; /* IPL Blue */
+  text-shadow: 0 1px 3px rgba(29, 78, 216, 0.6);
+}
+.text-2xl {
+  font-size: 1.75rem;
+  line-height: 2.25rem;
+  font-weight: 800;
+}
+.font-bold {
+  font-weight: 700;
+}
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+/* Card base */
+.bg-white {
+  background-color: #fff;
+  border-radius: 0.75rem;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.bg-white:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
+/* LIVE Match card */
+.border-red-500 {
+  border-color: #EF4444;
+}
+.border-2 {
+  border-width: 2px;
+}
+.rounded-lg {
+  border-radius: 0.75rem;
+}
+.shadow-lg {
+  box-shadow: 0 10px 15px rgba(239, 68, 68, 0.3);
+}
+.p-4 {
+  padding: 1.25rem;
+}
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
+/* Flex and Grid layouts */
+.flex {
+  display: flex;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.items-center {
+  align-items: center;
+}
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+.grid {
+  display: grid;
+}
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+.md\:grid-cols-3 {
+  /* media query filled below */
+}
+.gap-4 {
+  gap: 1rem;
+}
+.text-center {
+  text-align: center;
+}
+.md\:text-left {
+  /* media query filled below */
+}
+
+/* Typography colors */
+.text-red-600 {
+  color: #DC2626;
+  font-weight: 700;
+  text-shadow: 0 1px 2px rgba(220, 38, 38, 0.7);
+}
+.text-gray-600 {
+  color: #4B5563;
+  font-style: italic;
+}
+.text-gray-700 {
+  color: #374151;
+}
+.text-gray-500 {
+  color: #6B7280;
+}
+.text-green-600 {
+  color: #16A34A;
+  font-weight: 700;
+  text-shadow: 0 1px 2px rgba(22, 163, 74, 0.7);
+}
+
+/* Font sizes */
+.text-md {
+  font-size: 1rem;
+}
+.text-lg {
+  font-size: 1.25rem;
+}
+.text-xl {
+  font-size: 1.375rem;
+  font-weight: 700;
+}
+.text-xs {
+  font-size: 0.75rem;
+}
+.font-semibold {
+  font-weight: 600;
+}
+
+/* Images with subtle border & shadow */
+img {
+  border-radius: 50%;
+  border: 2px solid #ddd;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.12);
+  transition: transform 0.3s ease;
+}
+img:hover {
+  transform: scale(1.1);
+  border-color: #1D4ED8;
+}
+
+/* Sizes for images */
+.w-12 {
+  width: 3rem;
+  height: 3rem;
+}
+.h-12 {
+  height: 3rem;
+}
+.w-10 {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.h-10 {
+  height: 2.5rem;
+}
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+
+/* Borders & spacing */
+.pt-3 {
+  padding-top: 0.75rem;
+}
+.mt-3 {
+  margin-top: 0.75rem;
+}
+.mt-2 {
+  margin-top: 0.5rem;
+}
+.border-t {
+  border-top: 2px solid #E0E7FF;
+}
+
+/* Striker/Non-Striker/Bowler info box */
+.text-sm {
+  font-size: 0.875rem;
+  color: #555;
+}
+.text-center p {
+  margin: 0.15rem 0;
+}
+
+/* Upcoming matches container */
+.mb-4 {
+  margin-bottom: 1rem;
+}
+.p-3 {
+  padding: 0.75rem;
+}
+.border {
+  border: 1px solid #e2e8f0;
+}
+.rounded-lg {
+  border-radius: 0.75rem;
+}
+.shadow {
+  box-shadow: 0 3px 8px rgba(0,0,0,0.07);
+}
+
+/* Upcoming match hover */
+div[role="upcoming-match"]:hover {
+  background-color: #e0e7ff;
+  border-color: #3b82f6;
+  cursor: pointer;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(59, 130, 246, 0.3);
+  transition: all 0.3s ease;
+}
+
+/* VS Text */
+.text-gray-600 {
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 2px;
+}
+
+/* Responsive media queries */
+@media (min-width: 768px) {
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .md\:items-start {
+    align-items: flex-start;
+  }
+  .md\:items-end {
+    align-items: flex-end;
+  }
+  .md\:text-left {
+    text-align: left;
+  }
+}

@@ -1,0 +1,4 @@
+[
+  { "id": "sch1", "matchNumber": "Match 1", "date": "Mar 22", "time": "7:30 PM", "team1": { "name": "Chennai Super Kings", "shortName": "CSK" }, "team2": { "name": "Royal Challengers Bengaluru", "shortName": "RCB" }, "venue": "MA Chidambaram Stadium, Chennai" },
+  { "id": "sch2", "matchNumber": "Match 2", "date": "Mar 23", "time": "3:30 PM", "team1": { "name": "Punjab Kings", "shortName": "PBKS" }, "team2": { "name": "Delhi Capitals", "shortName": "DC" }, "venue": "PCA Stadium, Mohali" }
+]

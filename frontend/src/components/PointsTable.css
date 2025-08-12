@@ -1,0 +1,184 @@
+/* Container and padding */
+.pt-container {
+  padding: 1rem 1.5rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9fafb; /* Light background */
+  color: #2d3748; /* Dark slate color */
+  max-width: 900px;
+  margin: 1.5rem auto;
+  border-radius: 0.5rem;
+  box-shadow: 0 8px 20px rgb(0 0 0 / 0.1);
+}
+
+/* Title */
+.pt-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2563eb; /* blue-600 */
+  margin-bottom: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 2px rgba(37, 99, 235, 0.7);
+}
+
+/* Table wrapper with horizontal scroll on small screens */
+.pt-table-wrapper {
+  overflow-x: auto;
+  background: #ffffff;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Table Styling */
+.pt-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 700px;
+  font-size: 0.9rem;
+}
+
+/* Table Head */
+.pt-thead {
+  background-color: #e0e7ff; /* blue-100 */
+  border-bottom: 3px solid #2563eb; /* blue-600 */
+}
+
+.pt-th {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  font-weight: 600;
+  color: #4c51bf; /* blue-700 */
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border-right: 1px solid #cbd5e0; /* gray-300 */
+  user-select: none;
+}
+
+.pt-th:last-child {
+  border-right: none;
+}
+
+/* Column specific widths and alignments */
+.pt-th.pos {
+  width: 3.5rem;
+}
+
+.pt-th.team {
+  width: 30%;
+}
+
+.pt-th.played,
+.pt-th.won,
+.pt-th.lost,
+.pt-th.nr,
+.pt-th.pts,
+.pt-th.nrr {
+  width: 6rem;
+  text-align: center;
+}
+
+/* Table body rows */
+.pt-row {
+  transition: background-color 0.3s ease;
+  cursor: default;
+}
+
+.pt-row:hover {
+  background-color: #ebf4ff; /* blue-50 */
+}
+
+/* Highlight top 4 teams */
+.pt-top-team {
+  background-color: #d1fae5 !important; /* green-100 */
+}
+
+/* Table cells */
+.pt-td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #e2e8f0; /* gray-200 */
+  vertical-align: middle;
+  color: #1a202c; /* gray-900 */
+}
+
+/* Text alignments */
+.pt-td.pos,
+.pt-td.played,
+.pt-td.won,
+.pt-td.lost,
+.pt-td.nr,
+.pt-td.pts,
+.pt-td.nrr {
+  text-align: center;
+  font-weight: 600;
+}
+
+.pt-td.pts {
+  font-weight: 700;
+  color: #2563eb; /* blue-600 */
+}
+
+/* Team info flex */
+.pt-team-info {
+  display: flex;
+  align-items: center;
+}
+
+/* Team logo */
+.pt-team-logo {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 9999px;
+  margin-right: 0.5rem;
+  object-fit: cover;
+  box-shadow: 0 0 4px rgba(37, 99, 235, 0.4);
+}
+
+/* Team short name */
+.pt-team-short {
+  font-weight: 600;
+  color: #2d3748; /* gray-800 */
+  font-size: 1rem;
+}
+
+/* Full team name in smaller font */
+.pt-team-full {
+  font-size: 0.75rem;
+  color: #718096; /* gray-500 */
+  margin-left: 0.25rem;
+  font-style: italic;
+  display: none;
+}
+
+/* Show full team name on md+ screens */
+@media (min-width: 768px) {
+  .pt-team-full {
+    display: inline;
+  }
+}
+
+/* Hide Played and NR columns on smaller than sm */
+@media (max-width: 639px) {
+  .pt-th.played,
+  .pt-td.played,
+  .pt-th.nr,
+  .pt-td.nr {
+    display: none;
+  }
+}
+
+/* Points table unavailable message */
+.pt-unavailable {
+  padding: 1rem;
+  font-style: italic;
+  color: #a0aec0; /* gray-400 */
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+/* Responsive improvements */
+@media (max-width: 480px) {
+  .pt-team-short {
+    font-size: 0.85rem;
+  }
+}
